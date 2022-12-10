@@ -1,0 +1,7 @@
+1) Input word.
+2) Find out its phonetic hash code.
+3) First letter of code gives first letter of matching words.
+4) Reverse lookup hash code dictionary to create other words.
+5) Hash code dictionary generally have multiple letters mapping to the same digit.
+6) Reverse lookup gives us all matching words.
+7) Store these words in output file. 
