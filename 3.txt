@@ -1,0 +1,6 @@
+Given that we have 100 APIs, 1000 users and 1 million requests being made per day.
+Since number of requests are too high, we would need multiple data stores and need to replicate data between them to ensure availability and partition tolerance.
+We can divide into 10 data stores with each data store maintaining logs for 10 users.
+We should also have one data store replicate data of some other data store to ensure data availability even in case if one of the data store goes corrupt. This way we will have data of one datastore backed up in some other store as well.
+In every data store, we would store the API ID, related data, User name, Response time,Request Error(if any?)
+Queries can be performed by applying conditions and joins across data stores.
